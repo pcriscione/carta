@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Princesa – Bar & Restaurant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:        #141008;
+      --bg2:       #1e1810;
+      --card:      #231d12;
+      --gold:      #c9a84c;
+      --gold-l:    #e8c96a;
+      --gold-d:    #7a5e1a;
+      --gold-dim:  #4a3a14;
+      --cream:     #d4c9a8;
+      --text:      #b8ad94;
+      --white:     #f5f0e8;
+      --sep:       #3a2e14;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', sans-serif;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse at 20% 20%, rgba(201,168,76,.06) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(201,168,76,.04) 0%, transparent 60%);
+    }
+
+    /* ── HEADER ── */
+    header {
+      text-align: center;
+      padding: 52px 20px 36px;
+      border-bottom: 1px solid var(--gold-dim);
+      position: relative;
+    }
+    header::after {
+      content: '';
+      display: block;
+      width: 200px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 24px auto 0;
+    }
+
+    .crown {
+      width: 56px;
+      height: 44px;
+      margin: 0 auto 14px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 3.8rem);
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: .12em;
+      line-height: 1;
+      text-shadow: 0 2px 24px rgba(201,168,76,.25);
+    }
+
+    .tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: .95rem;
+      color: var(--gold-d);
+      letter-spacing: .28em;
+      margin-top: 8px;
+    }
+
+    /* ── NAV TABS ── */
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 24px 16px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(20,16,8,.92);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--sep);
+    }
+
+    nav a {
+      font-family: 'Lato', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold-d);
+      text-decoration: none;
+      padding: 6px 14px;
+      border: 1px solid var(--gold-dim);
+      border-radius: 2px;
+      transition: all .2s;
+    }
+    nav a:hover, nav a.active {
+      color: var(--bg);
+      background: var(--gold);
+      border-color: var(--gold);
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* ── SECTION ── */
+    .menu-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 80px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    .ornament {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .ornament::before, .ornament::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-dim));
+    }
+    .ornament::after {
+      background: linear-gradient(90deg, var(--gold-dim), transparent);
+    }
+    .ornament-diamond {
+      width: 8px;
+      height: 8px;
+      background: var(--gold);
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+
+    /* ── ITEMS GRID ── */
+    .items-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2px;
+    }
+
+    @media (min-width: 600px) {
+      .items-grid { grid-template-columns: 1fr 1fr; gap: 2px 32px; }
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 8px;
+      padding: 13px 0;
+      border-bottom: 1px solid var(--sep);
+      transition: background .15s;
+    }
+    .menu-item:hover {
+      background: rgba(201,168,76,.04);
+      padding-left: 6px;
+      padding-right: 6px;
+      margin: 0 -6px;
+    }
+
+    .item-name {
+      font-family: 'Lato', sans-serif;
+      font-size: .95rem;
+      font-weight: 400;
+      color: var(--cream);
+      flex: 1;
+    }
+
+    .item-dots {
+      flex: 1;
+      border-bottom: 1px dotted var(--gold-dim);
+      margin: 0 8px 4px;
+      min-width: 20px;
+    }
+
+    .item-price {
+      font-family: 'Playfair Display', serif;
+      font-size: .92rem;
+      font-weight: 700;
+      color: var(--gold);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 20px 36px;
+      border-top: 1px solid var(--sep);
+      font-size: .78rem;
+      color: var(--gold-d);
+      letter-spacing: .08em;
+    }
+    footer strong {
+      color: var(--gold);
+      font-family: 'Playfair Display', serif;
+      font-size: .95rem;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    /* ── LOADING / ERROR ── */
+    #status {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--gold-d);
+      font-style: italic;
+    }
+
+    /* ── SCROLL TO TOP ── */
+    #top-btn {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      width: 40px;
+      height: 40px;
+      background: var(--gold);
+      color: var(--bg);
+      border: none;
+      border-radius: 2px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity .3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #top-btn.visible { opacity: 1; }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Crown SVG -->
+  <svg class="crown" viewBox="0 0 80 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M8 48 L8 30 L20 42 L40 8 L60 42 L72 30 L72 48 Z" fill="#c9a84c" opacity=".15" stroke="#c9a84c" stroke-width="1.5"/>
+    <path d="M8 48 L8 30 L20 42 L40 8 L60 42 L72 30 L72 48 Z" fill="#c9a84c" opacity=".9"/>
+    <rect x="8" y="46" width="64" height="8" rx="1" fill="#c9a84c"/>
+    <circle cx="40" cy="10" r="3" fill="#141008"/>
+    <circle cx="20" cy="42" r="2.5" fill="#141008"/>
+    <circle cx="60" cy="42" r="2.5" fill="#141008"/>
+  </svg>
+
+  <h1>LA PRINCESA</h1>
+  <p class="tagline">— bar &amp; restaurant —</p>
+</header>
+
+<nav id="nav"></nav>
+
+<main id="menu"></main>
+
+<footer>
+  <strong>La Princesa – Bar &amp; Restaurant</strong>
+  Todos los precios incluyen IVA · Carta sujeta a cambios sin previo aviso
+</footer>
+
+<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+  // ── Format price ──────────────────────────────────────────────
+  function formatPrice(n) {
+    return '$' + Number(n).toLocaleString('es-CL');
+  }
+
+  // ── Slugify for anchor IDs ────────────────────────────────────
+  function slug(str) {
+    return str.toLowerCase()
+      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+      .replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+  }
+
+  // ── Build page from catalog data ──────────────────────────────
+  function buildMenu(catalog) {
+    const nav  = document.getElementById('nav');
+    const main = document.getElementById('menu');
+    main.innerHTML = '';
+    nav.innerHTML  = '';
+
+    catalog.forEach((section, idx) => {
+      const id = slug(section.categoria);
+
+      // Nav tab
+      const a = document.createElement('a');
+      a.href = '#' + id;
+      a.textContent = section.categoria;
+      if (idx === 0) a.classList.add('active');
+      nav.appendChild(a);
+
+      // Section
+      const sec = document.createElement('section');
+      sec.className = 'menu-section';
+      sec.id = id;
+
+      sec.innerHTML = `
+        <div class="section-header">
+          <div class="ornament"><div class="ornament-diamond"></div></div>
+          <h2 class="section-title">${section.categoria}</h2>
+          <div class="ornament"><div class="ornament-diamond"></div></div>
+        </div>
+        <div class="items-grid" id="grid-${id}"></div>
+      `;
+
+      main.appendChild(sec);
+
+      const grid = sec.querySelector('#grid-' + id);
+      section.items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `
+          <span class="item-name">${item.nombre}</span>
+          <span class="item-dots"></span>
+          <span class="item-price">${formatPrice(item.precio)}</span>
+        `;
+        grid.appendChild(div);
+      });
+    });
+  }
+
+  // ── Load catalog.json ─────────────────────────────────────────
+  fetch('catalogo.json')
+    .then(r => {
+      if (!r.ok) throw new Error('No se pudo cargar catalogo.json');
+      return r.json();
+    })
+    .then(data => buildMenu(data))
+    .catch(err => {
+      document.getElementById('menu').innerHTML =
+        `<div id="status">⚠️ No se pudo cargar el catálogo.<br><small>${err.message}</small></div>`;
+    });
+
+  // ── Active nav on scroll ──────────────────────────────────────
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+        const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
+        if (link) link.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+
+  // Observe after DOM builds (catalog is async)
+  const mo = new MutationObserver(() => {
+    document.querySelectorAll('.menu-section').forEach(s => observer.observe(s));
+  });
+  mo.observe(document.getElementById('menu'), { childList: true });
+
+  // ── Scroll to top button ──────────────────────────────────────
+  window.addEventListener('scroll', () => {
+    document.getElementById('top-btn').classList.toggle('visible', window.scrollY > 400);
+  });
+</script>
+</body>
+</html>

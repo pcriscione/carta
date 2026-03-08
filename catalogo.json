@@ -1,0 +1,335 @@
+[
+  {
+    "categoria": "Piqueos",
+    "items": [
+      {
+        "nombre": "Chicken Fingers",
+        "precio": 8900
+      },
+      {
+        "nombre": "Empanadas",
+        "precio": 7900
+      },
+      {
+        "nombre": "Empanadas del mar",
+        "precio": 8900
+      },
+      {
+        "nombre": "Yuca frita",
+        "precio": 6900
+      },
+      {
+        "nombre": "Yuca rellena",
+        "precio": 12900
+      }
+    ]
+  },
+  {
+    "categoria": "Entradas",
+    "items": [
+      {
+        "nombre": "Ceviche clásico",
+        "precio": 15900
+      },
+      {
+        "nombre": "Ceviche La Princesa",
+        "precio": 16900
+      },
+      {
+        "nombre": "Ceviche apaltado",
+        "precio": 16900
+      },
+      {
+        "nombre": "Causa acevichada",
+        "precio": 14900
+      },
+      {
+        "nombre": "Causa de pollo",
+        "precio": 11900
+      },
+      {
+        "nombre": "Rabas La Princesa",
+        "precio": 10900
+      },
+      {
+        "nombre": "Ají relleno",
+        "precio": 12900
+      },
+      {
+        "nombre": "Pulpo al olivo",
+        "precio": 16900
+      },
+      {
+        "nombre": "Carpaccio de locos",
+        "precio": 20900
+      },
+      {
+        "nombre": "Trilogía de causas",
+        "precio": 13900
+      },
+      {
+        "nombre": "Jalea La Laguna",
+        "precio": 19900
+      },
+      {
+        "nombre": "Causa crocante",
+        "precio": 11900
+      },
+      {
+        "nombre": "Tiradito nikkei",
+        "precio": 14900
+      }
+    ]
+  },
+  {
+    "categoria": "Platos",
+    "items": [
+      {
+        "nombre": "Lomo saltado",
+        "precio": 18900
+      },
+      {
+        "nombre": "Fetuccini criollo",
+        "precio": 17900
+      },
+      {
+        "nombre": "Risotto criollo",
+        "precio": 22900
+      },
+      {
+        "nombre": "Arroz chaufa de pollo",
+        "precio": 10900
+      },
+      {
+        "nombre": "Arroz chaufa camaron",
+        "precio": 12900
+      },
+      {
+        "nombre": "Arroz chaufa filete",
+        "precio": 12900
+      },
+      {
+        "nombre": "Costillar con papas fritas",
+        "precio": 19900
+      },
+      {
+        "nombre": "Milanesa fetuccini huancaína",
+        "precio": 12900
+      },
+      {
+        "nombre": "Picante de mariscos",
+        "precio": 13900
+      },
+      {
+        "nombre": "Ají de gallina",
+        "precio": 10900
+      },
+      {
+        "nombre": "Camarón Quinoa",
+        "precio": 14900
+      },
+      {
+        "nombre": "Risotto de mariscos",
+        "precio": 16900
+      },
+      {
+        "nombre": "Tacu tacu lomo",
+        "precio": 16900
+      },
+      {
+        "nombre": "Tacu tacu macho",
+        "precio": 17900
+      },
+      {
+        "nombre": "Pescado a lo macho",
+        "precio": 17900
+      },
+      {
+        "nombre": "Atún con salsa de mora",
+        "precio": 17900
+      },
+      {
+        "nombre": "Salmón con risotto verde",
+        "precio": 19900
+      },
+      {
+        "nombre": "Plancha taipa",
+        "precio": 17900
+      },
+      {
+        "nombre": "Pulpo a la parrilla",
+        "precio": 24900
+      },
+      {
+        "nombre": "Garrón de cordero",
+        "precio": 32900
+      },
+      {
+        "nombre": "Asado con risotto de setas",
+        "precio": 22900
+      },
+      {
+        "nombre": "Ravioli La Princesa",
+        "precio": 17900
+      },
+      {
+        "nombre": "Flechitas de cupido",
+        "precio": 10900
+      }
+    ]
+  },
+  {
+    "categoria": "Hamburguesas",
+    "items": [
+      {
+        "nombre": "Hamburguesa La Princesa",
+        "precio": 12900
+      },
+      {
+        "nombre": "Hamburguesa La Gringa",
+        "precio": 12900
+      },
+      {
+        "nombre": "La Sureña",
+        "precio": 12900
+      },
+      {
+        "nombre": "Hamburguesa Ramona",
+        "precio": 15900
+      }
+    ]
+  },
+  {
+    "categoria": "Sandwiches",
+    "items": [
+      {
+        "nombre": "De pollo a la parrilla",
+        "precio": 9900
+      },
+      {
+        "nombre": "De lomo saltado",
+        "precio": 13900
+      },
+      {
+        "nombre": "De pescado frito",
+        "precio": 13900
+      }
+    ]
+  },
+  {
+    "categoria": "Ensaladas",
+    "items": [
+      {
+        "nombre": "La Princesa",
+        "precio": 11900
+      },
+      {
+        "nombre": "Cesar pollo",
+        "precio": 8900
+      },
+      {
+        "nombre": "Cesar camarón",
+        "precio": 13900
+      },
+      {
+        "nombre": "De atún fresco",
+        "precio": 12900
+      },
+      {
+        "nombre": "Ensalada de betabel",
+        "precio": 9900
+      },
+      {
+        "nombre": "Coliflor asada",
+        "precio": 9900
+      }
+    ]
+  },
+  {
+    "categoria": "Veggie",
+    "items": [
+      {
+        "nombre": "Ceviche veggie",
+        "precio": 11900
+      },
+      {
+        "nombre": "Tacu tacu veggie",
+        "precio": 11900
+      }
+    ]
+  },
+  {
+    "categoria": "Menú Infantil",
+    "items": [
+      {
+        "nombre": "Nuggets pollo",
+        "precio": 7900
+      },
+      {
+        "nombre": "Milanesa con puré",
+        "precio": 7900
+      },
+      {
+        "nombre": "Camarones con puré",
+        "precio": 9900
+      },
+      {
+        "nombre": "Mini hamburguesa con queso",
+        "precio": 9900
+      },
+      {
+        "nombre": "Salchipapas",
+        "precio": 7900
+      },
+      {
+        "nombre": "Quesadilla",
+        "precio": 9900
+      }
+    ]
+  },
+  {
+    "categoria": "Postres",
+    "items": [
+      {
+        "nombre": "Crema volteada",
+        "precio": 4900
+      },
+      {
+        "nombre": "Tiramisú",
+        "precio": 5900
+      },
+      {
+        "nombre": "Tarta de limón",
+        "precio": 3900
+      },
+      {
+        "nombre": "Tarta de maracuyá",
+        "precio": 4200
+      },
+      {
+        "nombre": "Copa helada",
+        "precio": 4500
+      },
+      {
+        "nombre": "Panqueques de la abuela",
+        "precio": 4900
+      },
+      {
+        "nombre": "Volcán de chocolate",
+        "precio": 5900
+      },
+      {
+        "nombre": "Creme brulee",
+        "precio": 4900
+      },
+      {
+        "nombre": "Suspiro limeño",
+        "precio": 4900
+      },
+      {
+        "nombre": "Brownie chocolata",
+        "precio": 4900
+      }
+    ]
+  }
+]

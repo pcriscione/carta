@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramona – Carta de Bebidas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg:       #f5c518;
+      --bg2:      #e8b800;
+      --card:     #fff8e1;
+      --red:      #8b1a1a;
+      --red-l:    #b02020;
+      --red-d:    #5a0e0e;
+      --red-dim:  #c47a7a;
+      --cream:    #3d1c00;
+      --text:     #3d1c00;
+      --sep:      #c9a000;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', sans-serif;
+      min-height: 100vh;
+      background-image:
+        radial-gradient(ellipse at 20% 20%, rgba(139,26,26,.08) 0%, transparent 60%),
+        radial-gradient(ellipse at 80% 80%, rgba(139,26,26,.05) 0%, transparent 60%);
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 28px;
+      border-bottom: 2px solid var(--red-d);
+    }
+    header a { display: inline-block; }
+    header img { max-width: 200px; width: 70%; height: auto; }
+    nav { display: none; }
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 16px 60px;
+    }
+    .menu-section { margin-bottom: 48px; scroll-margin-top: 20px; }
+    .section-header { text-align: center; margin-bottom: 24px; }
+    .ornament {
+      display: flex; align-items: center; gap: 12px; margin-bottom: 10px;
+    }
+    .ornament::before, .ornament::after {
+      content: ''; flex: 1; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--red-d));
+    }
+    .ornament::after { background: linear-gradient(90deg, var(--red-d), transparent); }
+    .ornament-diamond {
+      width: 8px; height: 8px; background: var(--red);
+      transform: rotate(45deg); flex-shrink: 0;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700;
+      color: var(--red); letter-spacing: .2em; text-transform: uppercase;
+    }
+    .items-grid { display: grid; grid-template-columns: 1fr; gap: 2px; }
+    @media (min-width: 600px) { .items-grid { grid-template-columns: 1fr 1fr; gap: 2px 32px; } }
+    .menu-item {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: 8px; padding: 13px 0; border-bottom: 1px solid var(--sep);
+      transition: background .15s;
+    }
+    .menu-item:hover { background: rgba(139,26,26,.06); padding-left:6px; padding-right:6px; margin: 0 -6px; }
+    .item-name { font-size: .95rem; font-weight: 400; color: var(--text); flex: 1; }
+    .item-dots { flex: 1; border-bottom: 1px dotted var(--red-dim); margin: 0 8px 4px; min-width: 20px; }
+    .item-price {
+      font-family: 'Playfair Display', serif;
+      font-size: .92rem; font-weight: 700; color: var(--red); white-space: nowrap; flex-shrink: 0;
+    }
+    footer {
+      text-align: center; padding: 24px 20px 32px;
+      border-top: 2px solid var(--red-d);
+      font-size: .78rem; color: var(--red-d); letter-spacing: .08em;
+    }
+    footer strong {
+      color: var(--red); font-family: 'Playfair Display', serif;
+      font-size: .95rem; display: block; margin-bottom: 6px;
+    }
+    #status { text-align: center; padding: 60px 20px; color: var(--red-d); font-style: italic; }
+    #top-btn {
+      position: fixed; bottom: 24px; right: 24px; width: 40px; height: 40px;
+      background: var(--red); color: #fff; border: none; border-radius: 2px;
+      font-size: 1.1rem; cursor: pointer; opacity: 0; transition: opacity .3s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #top-btn.visible { opacity: 1; }
+  </style>
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="logoRamona.webp" alt="Ramona" />
+  </a>
+</header>
+<nav id="nav"></nav>
+<main id="menu"></main>
+<footer>
+  <strong>Ramona – Chelas &amp; Botanas</strong>
+  Todos los precios incluyen IVA · Carta sujeta a cambios sin previo aviso
+</footer>
+<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+  function formatPrice(n) {
+    if (typeof n === 'string') return n;
+    return '$' + Number(n).toLocaleString('es-CL');
+  }
+  function slug(str) {
+    return str.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/\s+/g,'-').replace(/[^a-z0-9-]/g,'');
+  }
+  function buildMenu(catalog) {
+    const main = document.getElementById('menu');
+    main.innerHTML = '';
+    catalog.forEach(section => {
+      const id = slug(section.categoria);
+      const sec = document.createElement('section');
+      sec.className = 'menu-section';
+      sec.id = id;
+      sec.innerHTML = `
+        <div class="section-header">
+          <div class="ornament"><div class="ornament-diamond"></div></div>
+          <h2 class="section-title">${section.categoria}</h2>
+          <div class="ornament"><div class="ornament-diamond"></div></div>
+        </div>
+        <div class="items-grid" id="grid-${id}"></div>
+      `;
+      main.appendChild(sec);
+      const grid = sec.querySelector('#grid-' + id);
+      section.items.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'menu-item';
+        div.innerHTML = `<span class="item-name">${item.nombre}</span><span class="item-dots"></span><span class="item-price">${formatPrice(item.precio)}</span>`;
+        grid.appendChild(div);
+      });
+    });
+  }
+  fetch('palased_ramona.json')
+    .then(r => { if (!r.ok) throw new Error('No se pudo cargar palased_ramona.json'); return r.json(); })
+    .then(data => buildMenu(data))
+    .catch(err => { document.getElementById('menu').innerHTML = `<div id="status">⚠️ ${err.message}</div>`; });
+  window.addEventListener('scroll', () => {
+    document.getElementById('top-btn').classList.toggle('visible', window.scrollY > 400);
+  });
+</script>
+</body>
+</html>

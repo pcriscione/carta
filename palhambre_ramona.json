@@ -1,0 +1,200 @@
+[
+  {
+    "categoria": "Botanas",
+    "items": [
+      {
+        "nombre": "Enchiladas",
+        "precio": 10900
+      },
+      {
+        "nombre": "BBQ Ribs Burrito",
+        "precio": 11900
+      },
+      {
+        "nombre": "Tacos de Birria",
+        "precio": 14900
+      },
+      {
+        "nombre": "Burrito de asado",
+        "precio": 10900
+      },
+      {
+        "nombre": "Burrito de carnitas",
+        "precio": 10900
+      },
+      {
+        "nombre": "Empalmes de asado",
+        "precio": 5900
+      },
+      {
+        "nombre": "Aguachile verde de camarones",
+        "precio": 11900
+      },
+      {
+        "nombre": "Papa acordeón",
+        "precio": 4900
+      },
+      {
+        "nombre": "Nachos Ramona",
+        "precio": 9900
+      },
+      {
+        "nombre": "Frijoles con veneno",
+        "precio": 10900
+      },
+      {
+        "nombre": "Burrito de pollo",
+        "precio": 10900
+      },
+      {
+        "nombre": "Quesadilla Ramona",
+        "precio": 11900
+      },
+      {
+        "nombre": "Guacamole Ramona",
+        "precio": 14900
+      },
+      {
+        "nombre": "Nachos de asado",
+        "precio": 9900
+      },
+      {
+        "nombre": "Chilaquiles",
+        "precio": 14900
+      }
+    ]
+  },
+  {
+    "categoria": "Taquería Fina",
+    "items": [
+      {
+        "nombre": "Tacos de barbacoa",
+        "precio": 8900
+      },
+      {
+        "nombre": "Tacos de pulpo",
+        "precio": 13900
+      },
+      {
+        "nombre": "Taco gobernador",
+        "precio": 14900
+      },
+      {
+        "nombre": "Tacos de Costillar",
+        "precio": 9900
+      },
+      {
+        "nombre": "Taco de asado",
+        "precio": 8900
+      },
+      {
+        "nombre": "Tacos de rib eye",
+        "precio": 11900
+      }
+    ]
+  },
+  {
+    "categoria": "Hamburguesas",
+    "items": [
+      {
+        "nombre": "Hamburguesa La Princesa",
+        "precio": 12900
+      },
+      {
+        "nombre": "Hamburguesa La Gringa",
+        "precio": 12900
+      },
+      {
+        "nombre": "La Sureña",
+        "precio": 12900
+      },
+      {
+        "nombre": "Hamburguesa Ramona",
+        "precio": 15900
+      }
+    ]
+  },
+  {
+    "categoria": "Sigue lo Verde",
+    "items": [
+      {
+        "nombre": "Ensalada de betabel",
+        "precio": 9900
+      },
+      {
+        "nombre": "Coliflor asada",
+        "precio": 9900
+      }
+    ]
+  },
+  {
+    "categoria": "Para los Niños",
+    "items": [
+      {
+        "nombre": "Nuggets pollo",
+        "precio": 7900
+      },
+      {
+        "nombre": "Milanesa con puré",
+        "precio": 7900
+      },
+      {
+        "nombre": "Camarones con puré",
+        "precio": 9900
+      },
+      {
+        "nombre": "Mini hamburguesa con queso",
+        "precio": 9900
+      },
+      {
+        "nombre": "Salchipapas",
+        "precio": 7900
+      },
+      {
+        "nombre": "Quesadilla",
+        "precio": 9900
+      }
+    ]
+  },
+  {
+    "categoria": "Dulce Final",
+    "items": [
+      {
+        "nombre": "Tiramisú",
+        "precio": 5900
+      },
+      {
+        "nombre": "Tarta de limón",
+        "precio": 3900
+      },
+      {
+        "nombre": "Tarta de maracuyá",
+        "precio": 4200
+      },
+      {
+        "nombre": "Copa helada",
+        "precio": 4500
+      },
+      {
+        "nombre": "Panqueques de la abuela",
+        "precio": 4900
+      },
+      {
+        "nombre": "Volcán de chocolate",
+        "precio": 5900
+      },
+      {
+        "nombre": "Creme brulee",
+        "precio": 4900
+      },
+      {
+        "nombre": "Brownie chocolata",
+        "precio": 4900
+      },
+      {
+        "nombre": "Taco Crocante",
+        "precio": 4900
+      }
+    ]
+  }
+]

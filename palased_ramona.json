@@ -1,0 +1,171 @@
+[
+  {
+    "categoria": "Mocktails",
+    "items": [
+      {
+        "nombre": "Jamaica",
+        "precio": 5900
+      },
+      {
+        "nombre": "Recuerdame",
+        "precio": 5900
+      },
+      {
+        "nombre": "Lupita",
+        "precio": 5900
+      },
+      {
+        "nombre": "Maracumango",
+        "precio": 5900
+      }
+    ]
+  },
+  {
+    "categoria": "Coctelería de Autor",
+    "items": [
+      {
+        "nombre": "Euforia",
+        "precio": 8900
+      },
+      {
+        "nombre": "Alma",
+        "precio": 8900
+      },
+      {
+        "nombre": "Místico",
+        "precio": 9900
+      },
+      {
+        "nombre": "Fresco",
+        "precio": 7900
+      }
+    ]
+  },
+  {
+    "categoria": "Arma tu Margarita",
+    "items": [
+      {
+        "nombre": "Margarita tradicional",
+        "precio": "Precio según tequila"
+      },
+      {
+        "nombre": "Frambuesa chamoy",
+        "precio": "Precio según tequila"
+      },
+      {
+        "nombre": "Al chile",
+        "precio": "Precio según tequila"
+      },
+      {
+        "nombre": "Piña chamoy",
+        "precio": "Precio según tequila"
+      },
+      {
+        "nombre": "Bikini azul",
+        "precio": "Precio según tequila"
+      },
+      {
+        "nombre": "Mangobiche",
+        "precio": "Precio según tequila"
+      }
+    ]
+  },
+  {
+    "categoria": "Micheladas",
+    "items": [
+      {
+        "nombre": "Chingón",
+        "precio": 1500
+      },
+      {
+        "nombre": "No mames",
+        "precio": 1500
+      },
+      {
+        "nombre": "Chupa cabras",
+        "precio": 1500
+      },
+      {
+        "nombre": "Tradicional",
+        "precio": 1500
+      }
+    ]
+  },
+  {
+    "categoria": "Cervezas",
+    "items": [
+      {
+        "nombre": "Heineken 330cc",
+        "precio": 3000
+      },
+      {
+        "nombre": "Torres del Paine 500cc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Austral Lager botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Heineken 500cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Coors botella 355cc",
+        "precio": 4000
+      },
+      {
+        "nombre": "Austral Calafate botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann sin alcohol 355cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann Bock botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann Torobayo 500cc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Heineken 00° sin alcohol 330cc",
+        "precio": 3000
+      },
+      {
+        "nombre": "Kunstmann Miel botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Austral Calafate 500cc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Kunstmann Pale Ale Torobayo 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann Gran Torobayo 480cc",
+        "precio": 5800
+      },
+      {
+        "nombre": "Sol botella 330cc",
+        "precio": 3000
+      },
+      {
+        "nombre": "Kunstmann Lager botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Corona Extra 355cc 4,5%",
+        "precio": 3000
+      },
+      {
+        "nombre": "Royal Guard 500cc",
+        "precio": 4200
+      }
+    ]
+  }
+]

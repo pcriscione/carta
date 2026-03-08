@@ -3,339 +3,151 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>La Princesa – Bar & Restaurant</title>
+  <title>Palhambre – La Princesa &amp; Ramona</title>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg:        #141008;
-      --bg2:       #1e1810;
-      --card:      #231d12;
-      --gold:      #c9a84c;
-      --gold-l:    #e8c96a;
-      --gold-d:    #7a5e1a;
-      --gold-dim:  #4a3a14;
-      --cream:     #d4c9a8;
-      --text:      #b8ad94;
-      --white:     #f5f0e8;
-      --sep:       #3a2e14;
+      --bg:       #141008;
+      --card:     #1e1810;
+      --gold:     #c9a84c;
+      --gold-l:   #e8c96a;
+      --gold-d:   #7a5e1a;
+      --gold-dim: #4a3a14;
+      --cream:    #d4c9a8;
+      --sep:      #3a2e14;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     body {
       background-color: var(--bg);
-      color: var(--text);
       font-family: 'Lato', sans-serif;
       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
       background-image:
         radial-gradient(ellipse at 20% 20%, rgba(201,168,76,.06) 0%, transparent 60%),
         radial-gradient(ellipse at 80% 80%, rgba(201,168,76,.04) 0%, transparent 60%);
     }
-
-    /* ── HEADER ── */
-    header {
-      text-align: center;
-      padding: 52px 20px 36px;
-      border-bottom: 1px solid var(--gold-dim);
-      position: relative;
-    }
-    header::after {
-      content: '';
-      display: block;
-      width: 200px;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
-      margin: 24px auto 0;
-    }
-
-    .crown {
-      width: 56px;
-      height: 44px;
-      margin: 0 auto 14px;
-    }
-
-    h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2.4rem, 6vw, 3.8rem);
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: .12em;
-      line-height: 1;
-      text-shadow: 0 2px 24px rgba(201,168,76,.25);
-    }
-
-    .tagline {
+    .top-tagline {
       font-family: 'Playfair Display', serif;
       font-style: italic;
-      font-size: .95rem;
+      font-size: .85rem;
       color: var(--gold-d);
-      letter-spacing: .28em;
-      margin-top: 8px;
-    }
-
-    /* ── NAV TABS ── */
-    nav { display: none; }
-
-    /* ── MAIN ── */
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 24px 16px 60px;
-    }
-
-    /* ── SECTION ── */
-    .menu-section {
-      margin-bottom: 56px;
-      scroll-margin-top: 80px;
-    }
-
-    .section-header {
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      margin-bottom: 32px;
       text-align: center;
-      margin-bottom: 28px;
     }
-
-    .ornament {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      width: 100%;
+      max-width: 700px;
+    }
+    @media (max-width: 500px) {
+      .grid { grid-template-columns: 1fr; max-width: 320px; }
+    }
+    .restaurant-card {
+      background: var(--card);
+      border: 1px solid var(--gold-dim);
+      border-radius: 4px;
+      padding: 32px 20px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .restaurant-card img {
+      width: 100%;
+      max-width: 180px;
+      height: 120px;
+      object-fit: contain;
+    }
+    .divider {
       display: flex;
       align-items: center;
-      gap: 12px;
-      margin-bottom: 12px;
+      gap: 8px;
+      width: 100%;
     }
-    .ornament::before, .ornament::after {
+    .divider::before, .divider::after {
       content: '';
       flex: 1;
       height: 1px;
-      background: linear-gradient(90deg, transparent, var(--gold-dim));
+      background: var(--gold-dim);
     }
-    .ornament::after {
-      background: linear-gradient(90deg, var(--gold-dim), transparent);
-    }
-    .ornament-diamond {
-      width: 8px;
-      height: 8px;
-      background: var(--gold);
+    .divider-diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--gold-d);
       transform: rotate(45deg);
       flex-shrink: 0;
     }
-
-    .section-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.55rem;
-      font-weight: 700;
-      color: var(--gold);
-      letter-spacing: .22em;
-      text-transform: uppercase;
-    }
-
-    /* ── ITEMS GRID ── */
-    .items-grid {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 2px;
-    }
-
-    @media (min-width: 600px) {
-      .items-grid { grid-template-columns: 1fr 1fr; gap: 2px 32px; }
-    }
-
-    .menu-item {
+    .btn-group {
       display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 8px;
-      padding: 13px 0;
-      border-bottom: 1px solid var(--sep);
-      transition: background .15s;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
     }
-    .menu-item:hover {
-      background: rgba(201,168,76,.04);
-      padding-left: 6px;
-      padding-right: 6px;
-      margin: 0 -6px;
-    }
-
-    .item-name {
-      font-family: 'Lato', sans-serif;
-      font-size: .95rem;
-      font-weight: 400;
-      color: var(--cream);
-      flex: 1;
-    }
-
-    .item-dots {
-      flex: 1;
-      border-bottom: 1px dotted var(--gold-dim);
-      margin: 0 8px 4px;
-      min-width: 20px;
-    }
-
-    .item-price {
-      font-family: 'Playfair Display', serif;
-      font-size: .92rem;
-      font-weight: 700;
-      color: var(--gold);
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-
-    /* ── FOOTER ── */
-    footer {
-      text-align: center;
-      padding: 28px 20px 36px;
-      border-top: 1px solid var(--sep);
-      font-size: .78rem;
-      color: var(--gold-d);
-      letter-spacing: .08em;
-    }
-    footer strong {
-      color: var(--gold);
-      font-family: 'Playfair Display', serif;
-      font-size: .95rem;
+    .btn {
       display: block;
-      margin-bottom: 6px;
-    }
-
-    /* ── LOADING / ERROR ── */
-    #status {
+      width: 100%;
+      padding: 12px 16px;
       text-align: center;
-      padding: 60px 20px;
-      color: var(--gold-d);
-      font-style: italic;
+      text-decoration: none;
+      font-family: 'Lato', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      border-radius: 2px;
+      transition: all .2s;
     }
-
-    /* ── SCROLL TO TOP ── */
-    #top-btn {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      width: 40px;
-      height: 40px;
+    .btn-food {
       background: var(--gold);
       color: var(--bg);
-      border: none;
-      border-radius: 2px;
-      font-size: 1.1rem;
-      cursor: pointer;
-      opacity: 0;
-      transition: opacity .3s;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border: 1px solid var(--gold);
     }
-    #top-btn.visible { opacity: 1; }
+    .btn-food:hover { background: var(--gold-l); border-color: var(--gold-l); }
+    .btn-drinks {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold-dim);
+    }
+    .btn-drinks:hover { border-color: var(--gold); background: rgba(201,168,76,.08); }
+    footer {
+      margin-top: 36px;
+      font-size: .72rem;
+      color: var(--gold-d);
+      letter-spacing: .08em;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
-
-<header>
-  <a href="inicio.html">
-    <img src="logoPrincesa.webp" alt="La Princesa" style="max-width: 280px; width: 80%;" />
-  </a>
-</header>
-
-<nav id="nav"></nav>
-
-<main id="menu"></main>
-
-<footer>
-  <strong>La Princesa – Bar &amp; Restaurant</strong>
-  Todos los precios incluyen IVA · Carta sujeta a cambios sin previo aviso
-</footer>
-
-<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-<script>
-  // ── Format price ──────────────────────────────────────────────
-  function formatPrice(n) {
-    return '$' + Number(n).toLocaleString('es-CL');
-  }
-
-  // ── Slugify for anchor IDs ────────────────────────────────────
-  function slug(str) {
-    return str.toLowerCase()
-      .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-      .replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-  }
-
-  // ── Build page from catalog data ──────────────────────────────
-  function buildMenu(catalog) {
-    const nav  = document.getElementById('nav');
-    const main = document.getElementById('menu');
-    main.innerHTML = '';
-    nav.innerHTML  = '';
-
-    catalog.forEach((section, idx) => {
-      const id = slug(section.categoria);
-
-      // Nav tab
-      const a = document.createElement('a');
-      a.href = '#' + id;
-      a.textContent = section.categoria;
-      if (idx === 0) a.classList.add('active');
-      nav.appendChild(a);
-
-      // Section
-      const sec = document.createElement('section');
-      sec.className = 'menu-section';
-      sec.id = id;
-
-      sec.innerHTML = `
-        <div class="section-header">
-          <div class="ornament"><div class="ornament-diamond"></div></div>
-          <h2 class="section-title">${section.categoria}</h2>
-          <div class="ornament"><div class="ornament-diamond"></div></div>
-        </div>
-        <div class="items-grid" id="grid-${id}"></div>
-      `;
-
-      main.appendChild(sec);
-
-      const grid = sec.querySelector('#grid-' + id);
-      section.items.forEach(item => {
-        const div = document.createElement('div');
-        div.className = 'menu-item';
-        div.innerHTML = `
-          <span class="item-name">${item.nombre}</span>
-          <span class="item-dots"></span>
-          <span class="item-price">${formatPrice(item.precio)}</span>
-        `;
-        grid.appendChild(div);
-      });
-    });
-  }
-
-  // ── Load catalog.json ─────────────────────────────────────────
-  fetch('catalogo.json')
-    .then(r => {
-      if (!r.ok) throw new Error('No se pudo cargar catalogo.json');
-      return r.json();
-    })
-    .then(data => buildMenu(data))
-    .catch(err => {
-      document.getElementById('menu').innerHTML =
-        `<div id="status">⚠️ No se pudo cargar el catálogo.<br><small>${err.message}</small></div>`;
-    });
-
-  // ── Active nav on scroll ──────────────────────────────────────
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
-        const link = document.querySelector(`nav a[href="#${e.target.id}"]`);
-        if (link) link.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-30% 0px -60% 0px' });
-
-  // Observe after DOM builds (catalog is async)
-  const mo = new MutationObserver(() => {
-    document.querySelectorAll('.menu-section').forEach(s => observer.observe(s));
-  });
-  mo.observe(document.getElementById('menu'), { childList: true });
-
-  // ── Scroll to top button ──────────────────────────────────────
-  window.addEventListener('scroll', () => {
-    document.getElementById('top-btn').classList.toggle('visible', window.scrollY > 400);
-  });
-</script>
+  <p class="top-tagline">Selecciona tu restaurante</p>
+  <div class="grid">
+    <!-- LA PRINCESA -->
+    <div class="restaurant-card">
+      <img src="logoPrincesa.webp" alt="La Princesa" />
+      <div class="divider"><div class="divider-diamond"></div></div>
+      <div class="btn-group">
+        <a href="palhambre_princesa.html" class="btn btn-food">🍽 Carta de comidas</a>
+        <a href="princesa-bebidas.html" class="btn btn-drinks">🍹 Carta de bebidas</a>
+      </div>
+    </div>
+    <!-- RAMONA -->
+    <div class="restaurant-card">
+      <img src="logoRamona.webp" alt="Ramona" />
+      <div class="divider"><div class="divider-diamond"></div></div>
+      <div class="btn-group">
+        <a href="ramona-comidas.html" class="btn btn-food">🍽 Carta de comidas</a>
+        <a href="ramona-bebidas.html" class="btn btn-drinks">🍹 Carta de bebidas</a>
+      </div>
+    </div>
+  </div>
+  <footer>Todos los precios incluyen IVA · Carta sujeta a cambios sin previo aviso</footer>
 </body>
 </html>

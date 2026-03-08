@@ -1,0 +1,806 @@
+[
+  {
+    "categoria": "Coctelería de Autor",
+    "items": [
+      {
+        "nombre": "Chilcano rosa y frutillas",
+        "precio": 6800
+      },
+      {
+        "nombre": "Chilcano naranja manzanilla",
+        "precio": 6800
+      },
+      {
+        "nombre": "Sueños",
+        "precio": 6800
+      }
+    ]
+  },
+  {
+    "categoria": "Coctelería",
+    "items": [
+      {
+        "nombre": "Caipiroska Sabores",
+        "precio": 6900
+      },
+      {
+        "nombre": "Martini",
+        "precio": 5900
+      },
+      {
+        "nombre": "Ramazzotti Spritz",
+        "precio": 5900
+      },
+      {
+        "nombre": "Rusty Nail",
+        "precio": 6900
+      },
+      {
+        "nombre": "Vaina",
+        "precio": 5500
+      },
+      {
+        "nombre": "Ramazzotti Sour",
+        "precio": 6900
+      },
+      {
+        "nombre": "Negroni",
+        "precio": 6800
+      },
+      {
+        "nombre": "Mojito",
+        "precio": 5900
+      },
+      {
+        "nombre": "Chilcano Peruano",
+        "precio": 5900
+      },
+      {
+        "nombre": "Ramazzotti Violetto",
+        "precio": 6400
+      },
+      {
+        "nombre": "Violetto Ginger",
+        "precio": 6900
+      },
+      {
+        "nombre": "Caipirinha",
+        "precio": 5900
+      },
+      {
+        "nombre": "Aperol Spritz",
+        "precio": 5900
+      },
+      {
+        "nombre": "Tropical gin",
+        "precio": 8900
+      },
+      {
+        "nombre": "Mojito Sabores",
+        "precio": 6900
+      },
+      {
+        "nombre": "Gin tonic",
+        "precio": 6900
+      },
+      {
+        "nombre": "Kir Royal",
+        "precio": 5900
+      },
+      {
+        "nombre": "Calafate Sour Barsol",
+        "precio": 6900
+      },
+      {
+        "nombre": "Daiquiri",
+        "precio": 5900
+      },
+      {
+        "nombre": "Araucano",
+        "precio": 4900
+      },
+      {
+        "nombre": "Calafate Sour Catedral Barsol",
+        "precio": 9900
+      },
+      {
+        "nombre": "Sour Peruano Barsol",
+        "precio": 5900
+      },
+      {
+        "nombre": "Caipiroska",
+        "precio": 5900
+      },
+      {
+        "nombre": "Sangria",
+        "precio": 6500
+      },
+      {
+        "nombre": "Piña Colada",
+        "precio": 6900
+      },
+      {
+        "nombre": "Caipirinha Sabores",
+        "precio": 6900
+      },
+      {
+        "nombre": "Apple Sour",
+        "precio": 5900
+      },
+      {
+        "nombre": "Milano mule",
+        "precio": 6900
+      },
+      {
+        "nombre": "Moscow Mule",
+        "precio": 6800
+      },
+      {
+        "nombre": "Daiquiri Sabores",
+        "precio": 6900
+      },
+      {
+        "nombre": "Sour Peruano Catedral Barsol",
+        "precio": 8900
+      },
+      {
+        "nombre": "Pinkzzotti",
+        "precio": 7900
+      },
+      {
+        "nombre": "Amaretto Sour",
+        "precio": 7900
+      },
+      {
+        "nombre": "Whisky Sour",
+        "precio": 5500
+      }
+    ]
+  },
+  {
+    "categoria": "Cervezas",
+    "items": [
+      {
+        "nombre": "Heineken 330cc",
+        "precio": 3000
+      },
+      {
+        "nombre": "Torres del Paine 500cc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Austral Lager botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Heineken 500cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Coors botella 355cc",
+        "precio": 4000
+      },
+      {
+        "nombre": "Austral Calafate botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann sin alcohol 355cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann Bock botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann Torobayo 500cc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Heineken 00° sin alcohol 330cc",
+        "precio": 3000
+      },
+      {
+        "nombre": "Kunstmann Miel botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Austral Calafate 500cc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Kunstmann Pale Ale Torobayo 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Kunstmann Gran Torobayo 480cc",
+        "precio": 5800
+      },
+      {
+        "nombre": "Sol botella 330cc",
+        "precio": 3000
+      },
+      {
+        "nombre": "Kunstmann Lager botella 330cc",
+        "precio": 4200
+      },
+      {
+        "nombre": "Corona Extra 355cc 4,5%",
+        "precio": 3000
+      },
+      {
+        "nombre": "Royal Guard 500cc",
+        "precio": 4200
+      }
+    ]
+  },
+  {
+    "categoria": "Vinos y Espumantes",
+    "items": [
+      {
+        "nombre": "Andes Plateu 400 Reserva",
+        "precio": 17900
+      },
+      {
+        "nombre": "Andes Plateu 400 Gran Reserva",
+        "precio": 17900
+      },
+      {
+        "nombre": "Tabali Pedregoso",
+        "precio": 22500
+      },
+      {
+        "nombre": "Tabalí Micas",
+        "precio": 27900
+      },
+      {
+        "nombre": "Atrevido",
+        "precio": 19600
+      },
+      {
+        "nombre": "Castillo de Molina Reserva",
+        "precio": 14500
+      },
+      {
+        "nombre": "Tabalí Pedregoso Gran Reserva",
+        "precio": 17900
+      },
+      {
+        "nombre": "Castillo Molina Sauv Blanc",
+        "precio": 14500
+      },
+      {
+        "nombre": "Marqués de Casa Concha",
+        "precio": 18900
+      },
+      {
+        "nombre": "Castillo Molina Chardonnay",
+        "precio": 14500
+      },
+      {
+        "nombre": "Tabali Pedregoso Gran Reserva",
+        "precio": 18900
+      },
+      {
+        "nombre": "Presumido",
+        "precio": 23900
+      },
+      {
+        "nombre": "Viñamar Brut (Chile)",
+        "precio": 11900
+      },
+      {
+        "nombre": "Viñamar Rose (Chile)",
+        "precio": 13900
+      },
+      {
+        "nombre": "Los Boldos Brut Nature",
+        "precio": 26900
+      },
+      {
+        "nombre": "1865 Single Vineyard",
+        "precio": 21900
+      },
+      {
+        "nombre": "Matetic Corralillo",
+        "precio": 21300
+      },
+      {
+        "nombre": "Maquis Gran Reserva",
+        "precio": 22900
+      },
+      {
+        "nombre": "J. Bouchon Block Series",
+        "precio": 18900
+      },
+      {
+        "nombre": "Montes Limited Selection",
+        "precio": 15900
+      },
+      {
+        "nombre": "Calcu Tiny Blocks Gran Reserva",
+        "precio": 21900
+      },
+      {
+        "nombre": "Tabali Vetas Blancas",
+        "precio": 29800
+      },
+      {
+        "nombre": "Donnaluna Bianco",
+        "precio": 14900
+      },
+      {
+        "nombre": "Donnaluna Rossato",
+        "precio": 14900
+      },
+      {
+        "nombre": "Donnaluna Tinto Rosso",
+        "precio": 14900
+      },
+      {
+        "nombre": "Copa Castillo Molina Carmenere",
+        "precio": 4900
+      },
+      {
+        "nombre": "Copa Castillo Molina Savignon Blanc",
+        "precio": 4900
+      },
+      {
+        "nombre": "Copa Castillo Molina Chardonnay",
+        "precio": 4900
+      },
+      {
+        "nombre": "Copa Castillo Molina Cabernet",
+        "precio": 4900
+      },
+      {
+        "nombre": "Copa Espumante Viñamar",
+        "precio": 3900
+      },
+      {
+        "nombre": "Chandon Brut",
+        "precio": 21900
+      }
+    ]
+  },
+  {
+    "categoria": "Shots",
+    "items": [
+      {
+        "nombre": "Saint Germain",
+        "precio": 8900
+      },
+      {
+        "nombre": "Stoli Premium",
+        "precio": 4800
+      },
+      {
+        "nombre": "Grey Goose",
+        "precio": 6500
+      },
+      {
+        "nombre": "Absolut Sabores",
+        "precio": 6200
+      },
+      {
+        "nombre": "elit by Stolichnaya",
+        "precio": 7000
+      },
+      {
+        "nombre": "Absolut Original",
+        "precio": 5900
+      },
+      {
+        "nombre": "Jose Cuervo Silver",
+        "precio": 5500
+      },
+      {
+        "nombre": "Olmeca Blanco",
+        "precio": 5500
+      },
+      {
+        "nombre": "Jack Daniel’s Gentleman Jack",
+        "precio": 7500
+      },
+      {
+        "nombre": "Jack Daniel’s Honey",
+        "precio": 5900
+      },
+      {
+        "nombre": "Jack Daniel’s Old N°",
+        "precio": 5900
+      },
+      {
+        "nombre": "Glenfiddich 12 Años Single Malt",
+        "precio": 7500
+      },
+      {
+        "nombre": "Johnnie Walker Red Label",
+        "precio": 5500
+      },
+      {
+        "nombre": "Chivas Regal 18 años",
+        "precio": 12000
+      },
+      {
+        "nombre": "Johnnie Walker Black Label",
+        "precio": 7500
+      },
+      {
+        "nombre": "Chivas Regal 12 años",
+        "precio": 7500
+      },
+      {
+        "nombre": "Johnnie Walker Green Label",
+        "precio": 12000
+      },
+      {
+        "nombre": "Havana Especial",
+        "precio": 4900
+      },
+      {
+        "nombre": "ZACAPA 23",
+        "precio": 9000
+      },
+      {
+        "nombre": "Havana Club 7 años",
+        "precio": 5500
+      },
+      {
+        "nombre": "Mistral Nobel 40°",
+        "precio": 4950
+      },
+      {
+        "nombre": "Mistral 35°",
+        "precio": 4500
+      },
+      {
+        "nombre": "Alto del Carmen",
+        "precio": 4500
+      },
+      {
+        "nombre": "Alto del Carmen 40°",
+        "precio": 5500
+      },
+      {
+        "nombre": "Bailey´s",
+        "precio": 4200
+      },
+      {
+        "nombre": "Drambuie",
+        "precio": 4500
+      },
+      {
+        "nombre": "Frangelico",
+        "precio": 4500
+      },
+      {
+        "nombre": "Campari",
+        "precio": 3000
+      },
+      {
+        "nombre": "Disaronno",
+        "precio": 5400
+      },
+      {
+        "nombre": "Shot de Jägermeister",
+        "precio": 3900
+      },
+      {
+        "nombre": "Gin Hendricks",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin Botanist",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin Beeafeater Pink 40°",
+        "precio": 6900
+      },
+      {
+        "nombre": "Gin Beeafeater 40°",
+        "precio": 6900
+      },
+      {
+        "nombre": "Fernet Branca + Bebida",
+        "precio": 5900
+      },
+      {
+        "nombre": "Ballantines 7 Años Bourbon",
+        "precio": 5500
+      },
+      {
+        "nombre": "Jack Daniel’s Fire (On the Rocks)",
+        "precio": 5900
+      },
+      {
+        "nombre": "Johnnie Walker Gold Label",
+        "precio": 10500
+      },
+      {
+        "nombre": "Glenfiddich 15 Años Single Malt",
+        "precio": 8900
+      },
+      {
+        "nombre": "Ballantines Finest",
+        "precio": 4900
+      },
+      {
+        "nombre": "Ballantines Hard Fired",
+        "precio": 4900
+      },
+      {
+        "nombre": "Chivas Regal 15 años",
+        "precio": 9500
+      },
+      {
+        "nombre": "Bulleit Bourbon",
+        "precio": 7000
+      },
+      {
+        "nombre": "Fernet Branca Menta + Bebida",
+        "precio": 5900
+      },
+      {
+        "nombre": "Don Julio",
+        "precio": 9000
+      },
+      {
+        "nombre": "Jose Cuervo reposado",
+        "precio": 5500
+      },
+      {
+        "nombre": "1800 Cristalino",
+        "precio": 9000
+      },
+      {
+        "nombre": "Horcon Quemado 40°",
+        "precio": 5900
+      },
+      {
+        "nombre": "Havana Club Reserva",
+        "precio": 5500
+      },
+      {
+        "nombre": "Havana Blanco",
+        "precio": 5500
+      },
+      {
+        "nombre": "Bacardi 8 años",
+        "precio": 6000
+      },
+      {
+        "nombre": "St-Remy Vsop",
+        "precio": 5200
+      },
+      {
+        "nombre": "Shot Absolut Extract",
+        "precio": 3000
+      },
+      {
+        "nombre": "Kahlua",
+        "precio": 4500
+      },
+      {
+        "nombre": "Stoli Premium Sabores",
+        "precio": 5900
+      },
+      {
+        "nombre": "Stoli Gold",
+        "precio": 5900
+      },
+      {
+        "nombre": "Absolut Watermelon",
+        "precio": 6200
+      },
+      {
+        "nombre": "Hennessy",
+        "precio": 9900
+      },
+      {
+        "nombre": "Gin ca",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin Mom",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin República",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin Mom Love",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin London",
+        "precio": 9000
+      },
+      {
+        "nombre": "Amazonian",
+        "precio": 9000
+      },
+      {
+        "nombre": "Tanqueray",
+        "precio": 6900
+      },
+      {
+        "nombre": "Bombay",
+        "precio": 6900
+      },
+      {
+        "nombre": "Bombay Bramble",
+        "precio": 6900
+      },
+      {
+        "nombre": "TX Texas Whiskey",
+        "precio": 7000
+      },
+      {
+        "nombre": "Herradura Ultra",
+        "precio": 9000
+      },
+      {
+        "nombre": "Herradura añejo",
+        "precio": 9000
+      },
+      {
+        "nombre": "Gin Beeafeater 24",
+        "precio": 9000
+      }
+    ]
+  },
+  {
+    "categoria": "Bebidas",
+    "items": [
+      {
+        "nombre": "Agua Porvenir s/gas",
+        "precio": 2500
+      },
+      {
+        "nombre": "Agua Porvenir c/gas",
+        "precio": 2500
+      },
+      {
+        "nombre": "Redbull Energy drink",
+        "precio": 3500
+      },
+      {
+        "nombre": "Redbull Maracuya",
+        "precio": 3500
+      },
+      {
+        "nombre": "Jugo Mango",
+        "precio": 3800
+      },
+      {
+        "nombre": "Jugo Frambuesa",
+        "precio": 3800
+      },
+      {
+        "nombre": "Agua tónica Premium",
+        "precio": 3600
+      },
+      {
+        "nombre": "Limonada menta jengibre",
+        "precio": 3800
+      },
+      {
+        "nombre": "Limonada con sabor",
+        "precio": 3800
+      },
+      {
+        "nombre": "Limonada",
+        "precio": 3800
+      },
+      {
+        "nombre": "Limonada menta",
+        "precio": 3800
+      },
+      {
+        "nombre": "Chicha Morada",
+        "precio": 3900
+      },
+      {
+        "nombre": "Bebidas",
+        "precio": 2500
+      },
+      {
+        "nombre": "Alma",
+        "precio": 8900
+      },
+      {
+        "nombre": "Alma (Copy)",
+        "precio": 8900
+      }
+    ]
+  },
+  {
+    "categoria": "Mocktails",
+    "items": [
+      {
+        "nombre": "Piña colada sin alcohol",
+        "precio": 5900
+      },
+      {
+        "nombre": "Ice tea clásico",
+        "precio": 3900
+      },
+      {
+        "nombre": "No-jito",
+        "precio": 4500
+      },
+      {
+        "nombre": "No-jito sabor",
+        "precio": 4900
+      }
+    ]
+  },
+  {
+    "categoria": "Cafetería",
+    "items": [
+      {
+        "nombre": "Té",
+        "precio": 2100
+      },
+      {
+        "nombre": "Espresso",
+        "precio": 2100
+      },
+      {
+        "nombre": "Infusion",
+        "precio": 1700
+      },
+      {
+        "nombre": "Latte",
+        "precio": 2900
+      },
+      {
+        "nombre": "Americano",
+        "precio": 2700
+      },
+      {
+        "nombre": "Cortado doble",
+        "precio": 2700
+      },
+      {
+        "nombre": "Chai Latte",
+        "precio": 2900
+      },
+      {
+        "nombre": "Espresso Doble",
+        "precio": 2600
+      },
+      {
+        "nombre": "Cortado",
+        "precio": 2200
+      },
+      {
+        "nombre": "Macchiato",
+        "precio": 1800
+      },
+      {
+        "nombre": "Chocolate caliente",
+        "precio": 3400
+      },
+      {
+        "nombre": "Cappuccino",
+        "precio": 2900
+      },
+      {
+        "nombre": "Ristretto",
+        "precio": 1600
+      },
+      {
+        "nombre": "Vitamina naranja",
+        "precio": 4900
+      },
+      {
+        "nombre": "Vitamina naranja plátano",
+        "precio": 4900
+      }
+    ]
+  }
+]
